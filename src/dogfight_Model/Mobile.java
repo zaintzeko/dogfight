@@ -1,12 +1,13 @@
 package dogfight_Model;
 
+import java.awt.Color;
 import java.awt.Dimension;
 
 public class Mobile implements IMobile {
+	private final Color color;
 	private final Dimension dimension;
 	private Direction direction;
 	private final String image;
-
 	private final Postition position;
 
 	private final int speed;
@@ -19,6 +20,7 @@ public class Mobile implements IMobile {
 		this.position = position;
 		this.speed = speed;
 		this.direction = direction;
+		// color = new Color();
 	}
 
 	public Color getColor() {
