@@ -1,5 +1,6 @@
 package dogfight_Model;
 
+import java.io.IOException;
 import java.util.ArrayList;
 
 public interface IDogfightModel {
@@ -15,7 +16,7 @@ public interface IDogfightModel {
 		return null;
 	}
 
-	public static IMobile getMobileByPlayer(final int player) {
+	public static IMobile getMobileByPlayer(final int player) throws IOException {
 		return new Mobile(null, null, null, player, null);
 	}
 

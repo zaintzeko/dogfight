@@ -2,38 +2,41 @@ package dogfight_Model;
 
 import java.awt.Color;
 import java.awt.Dimension;
-import java.awt.Graphics;
 import java.awt.Image;
-import java.awt.image.ImageObserver;
-import java.awt.image.ImageProducer;
+import java.io.File;
+import java.io.IOException;
 
-public class Mobile extends Image implements IMobile {
+import javax.imageio.ImageIO;
+
+public class Mobile implements IMobile {
 	private final Dimension dimension;
 	private Direction direction;
-	// private final String image;
+	private final Image image;
 	private final Position position;
 
 	private int speed;
 
 	public Mobile(final Direction direction, final Position position, final Dimension dimension, final int speed,
-			final String image) {
+			final String image) throws IOException {
 		this.speed = speed;
 		this.dimension = dimension;
 
 		this.position = position;
 		this.speed = speed;
 		this.direction = direction;
+		this.image = ImageIO.read(new File("images/" + image));
 		// this.image = new Image();
 	}
 
 	public Mobile(final Direction direction, final Position position, final int width, final int height,
-			final int speed, final String image) {
+			final int speed, final String image) throws IOException {
 		this.speed = speed;
 		this.dimension = new Dimension(width, height);
 
 		this.position = position;
 		this.speed = speed;
 		this.direction = direction;
+		this.image = ImageIO.read(new File("images/" + image));
 	}
 
 	public Color getColor() {
@@ -48,58 +51,28 @@ public class Mobile extends Image implements IMobile {
 		return this.direction;
 	}
 
-	public IDogfightModel getDogfightModel() {
+	public IDogfightModel getDogfightModel() throws IOException {
 		return new DogfightModel();
 	}
 
-	@Override
-	public Graphics getGraphics() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public void getHeight() {
-
-	}
-
-	@Override
-	public int getHeight(final ImageObserver observer) {
-		// TODO Auto-generated method stub
-		return 0;
+	public int getHeight() {
+		return 1;
 	}
 
 	public Image getImage() {
-		return this;
+		return this.image;
 	}
 
 	public Position getPosition() {
 		return this.position;
 	}
 
-	@Override
-	public Object getProperty(final String name, final ImageObserver observer) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public ImageProducer getSource() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
 	public int getSpeed() {
 		return this.speed;
 	}
 
-	public void getWidth() {
-
-	}
-
-	@Override
-	public int getWidth(final ImageObserver observer) {
-		// TODO Auto-generated method stub
-		return 0;
+	public int getWidth() {
+		return 1;
 	}
 
 	public boolean hit() {
