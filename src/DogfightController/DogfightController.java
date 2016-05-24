@@ -25,7 +25,7 @@ public class DogfightController {
 
 	}
 
-	public void setViewSystem(final IVewSystem viewSystem) {
+	public void setViewSystem(final IViewSystem viewSystem) {
 
 	}
 

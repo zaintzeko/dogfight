@@ -1,14 +1,20 @@
 package DogfightView;
-import dogfight_Model;
+import java.awt.Graphics;
+import java.awt.image.BufferedImage;
+import java.awt.image.ImageObserver;
+import java.util.Observer;
 
-public class GraphicsBuilder {
+import dogfight_Model.IDogfightModel;
+import dogfight_Model.IMobile;
+
+public class IGraphicsBuilder {
 	private IDogfightModel iDogfightModel;
 	private BufferedImage bufferedImage;
 	
 	private int GobalWidth;
 	private int GlobalHeight;
 	
-	public GraphicsBuilder(IDogfightModel digfightModel){
+	public IGraphicsBuilder(IDogfightModel digfightModel){
 		
 	}
 	
