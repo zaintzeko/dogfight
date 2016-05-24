@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class Missile extends Mobile {
 	private static int HEIGHT = 10;
-	private static String IMAGE = "missile.jpg";
+	private static String IMAGE = "missile";
 	private static int MAX_DISTANCE_TRAVELED = 1400;
 	private static int SPEED = 4;
 	private static int WIDTH = 30;

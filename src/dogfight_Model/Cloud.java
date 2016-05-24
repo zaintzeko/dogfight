@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class Cloud extends Mobile {
 	private static int HEIGHT = 150;
-	private static String IMAGE = "cloud.jpg";
+	private static String IMAGE = "cloud";
 	private static int SPEED = 1;
 	private static int WIDTH = 300;
 

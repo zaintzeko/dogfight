@@ -11,9 +11,9 @@ public class Sky implements IArea {
 	private final Dimension dimension;
 	private final Image image;
 
-	public Sky(final Dimension dimension) throws IOException {
+	public Sky(final Dimension dimension, final String image) throws IOException {
 		this.dimension = dimension;
-		this.image = ImageIO.read(new File("images/" + this.image));
+		this.image = ImageIO.read(new File("images/" + image + ".png"));
 	}
 
 	public Dimension getDimension() {

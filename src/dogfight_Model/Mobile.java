@@ -24,7 +24,7 @@ public class Mobile implements IMobile {
 		this.position = position;
 		this.speed = speed;
 		this.direction = direction;
-		this.image = ImageIO.read(new File("images/" + image));
+		this.image = ImageIO.read(new File("images/" + image + ".png"));
 		// this.image = new Image();
 	}
 

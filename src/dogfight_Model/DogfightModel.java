@@ -9,7 +9,7 @@ public class DogfightModel extends Observable implements IDogfightModel {
 	private final Sky sky;
 
 	public DogfightModel() throws IOException {
-		this.sky = new Sky(null);
+		this.sky = new Sky(null, "sky");
 		this.mobiles = new ArrayList<IMobile>();
 	}
 
@@ -28,7 +28,7 @@ public class DogfightModel extends Observable implements IDogfightModel {
 	}
 
 	public IArea getArea() throws IOException {
-		return new Sky(null);
+		return new Sky(null, "sky");
 	}
 
 	public ArrayList<IMobile> getMobiles() {
