@@ -21,6 +21,12 @@ public class DogfightModel extends Observable implements IDogfightModel {
 
 	}
 
+	@Override
+	public void closeAll() {
+		// TODO Auto-generated method stub
+
+	}
+
 	public IArea getArea() throws IOException {
 		return new Sky(null);
 	}

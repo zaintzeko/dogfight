@@ -5,16 +5,16 @@ import java.util.Observable;
 
 public class GamePanel {
 	private IGraphicsBuilder igraphicsBuilder;
-	
-	public GamePanel(IGraphicsBuilder graphicsBuilder){
-		
+
+	public GamePanel(final IGraphicsBuilder graphicsBuilder) {
+
 	}
-	
-	public update(Observable observable){
-		
+
+	public void paintComponent(final Graphics graphic) {
+
 	}
-	
-	public void paintComponent(Graphics graphic){
-		
+
+	public void update(final Observable observable) {
+
 	}
 }

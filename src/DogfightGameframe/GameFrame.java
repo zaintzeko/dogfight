@@ -5,22 +5,23 @@ import java.util.Observable;
 
 public class GameFrame {
 
+	GamePanel gamePanel = new GamePanel(null);
 	private IEventPerformer iEventPerformer;
-	GamePanel gamePanel = new GamePanel();
-	
-	public GameFrame(String title, IEventPerformer peformer, IGraphicBuilder graphicBuildern, Observable obserbable){
-		
+
+	public GameFrame(final String title, final IEventPerformer peformer, final IGraphicsBuilder graphicBuildern,
+			final Observable obserbable) {
+
 	}
-	
-	public void keyPressed(KeyEvent keyEvent){
-		
+
+	public void keyPressed(final KeyEvent keyEvent) {
+
 	}
-	
-	public void keyReleased(KeyEvent keyEvent){
-		
+
+	public void keyReleased(final KeyEvent keyEvent) {
+
 	}
-	
-	public void keyTyped(KeyEvent keyEvent){
-		
+
+	public void keyTyped(final KeyEvent keyEvent) {
+
 	}
 }

@@ -6,24 +6,26 @@ import DogfightController.IOrderPerformer;
 import DogfightGameframe.GameFrame;
 import dogfight_Model.IDogfightModel;
 
-public class DogfightView implements IViewSytem{
-	private IGraphicsBuilder graphicsBuilder;
+public class DogfightView implements IViewSystem {
 	private EventPerformer eventPerformer;
 	private GameFrame gameFrame;
-	
-	public void DogfightView(IOrderPerformer orderPerformer, IDogfightModel dogfightModel, Observable observable){
-		
+	private IGraphicsBuilder graphicsBuilder;
+
+	@Override
+	public void closeAll() {
+
 	}
-	
-	private void run(){
-		
+
+	public void displayMessage(final String Message) {
+
 	}
-	
-	public void displayMessage(String Message){
-		
+
+	public void DogfightView(final IOrderPerformer orderPerformer, final IDogfightModel dogfightModel,
+			final Observable observable) {
+
 	}
-	
-	public void closeAll(){
-		
+
+	private void run() {
+
 	}
 }

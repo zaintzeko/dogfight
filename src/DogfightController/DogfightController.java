@@ -1,9 +1,9 @@
 package DogfightController;
 
-import DogfightView.IVewSystem;
+import DogfightView.IViewSystem;
 import dogfight_Model.IDogfightModel;
 
-public class DogfightController implements IOrderPerformer, IVewSystem, IDogfightModel {
+public class DogfightController implements IOrderPerformer, IViewSystem, IDogfightModel {
 	int TIME_SLEEP = 30;
 
 	public DogfightController(final IDogfightModel dogfightModel) {

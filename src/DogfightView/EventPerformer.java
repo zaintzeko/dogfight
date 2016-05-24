@@ -7,16 +7,17 @@ import DogfightController.UserOrder;
 
 public class EventPerformer {
 	IOrderPerformer iOrderPerformer;
-	
-	public EventPerformer(IOrderPerformer orderPerformer ){
-		
+
+	public EventPerformer(final IOrderPerformer orderPerformer) {
+
 	}
-	
-	public void eventPerform(KeyEvent keyCode){
-		
+
+	public void eventPerform(final KeyEvent keyCode) {
+
 	}
-	
-	private UserOrder keyCodeToUserOrder(int keyCode){
-		
+
+	private UserOrder keyCodeToUserOrder(final int keyCode) {
+		return null;
+
 	}
 }

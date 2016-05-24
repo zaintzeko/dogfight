@@ -1,11 +1,11 @@
 package DogfightView;
 
 public interface IViewSystem {
-	
-	public static dispalysMessage(String message){
-		return null;
+
+	public static void dispalysMessage(final String message) {
+
 	}
-	
+
 	public void closeAll();
 
 }

@@ -32,4 +32,6 @@ public interface IDogfightModel {
 
 	}
 
+	void closeAll();
+
 }
