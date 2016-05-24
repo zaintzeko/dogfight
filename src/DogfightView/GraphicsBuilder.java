@@ -1,4 +1,4 @@
-package DogfightGameframe;
+package DogfightView;
 
 public class GraphicsBuilder {
 	private int GobalWidth;
