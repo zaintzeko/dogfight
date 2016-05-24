@@ -2,7 +2,7 @@ package DogfightView;
 
 import DogfightGameframe.GameFrame;
 
-public class DoghtfightView {
+public class DogfightView {
 	private GraphicsBuilder graphicsBuilder;
 	private EventPerformer eventPerformer;
 	private GameFrame gameFrame;
