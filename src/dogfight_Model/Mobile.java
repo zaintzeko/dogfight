@@ -2,7 +2,7 @@ package dogfight_Model;
 
 import java.awt.Dimension;
 
-public class Mobile {
+public class Mobile implements IMobile {
 	private final Dimension dimension;
 	private Direction direction;
 	private final String image;
