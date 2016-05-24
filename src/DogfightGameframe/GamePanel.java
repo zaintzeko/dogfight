@@ -1,4 +1,4 @@
-package DogfightView;
+package DogfightGameframe;
 
 public class GamePanel {
 

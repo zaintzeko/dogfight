@@ -1,4 +1,4 @@
-package DogfightGameframe;
+package DogfightView;
 
 import java.awt.event.KeyEvent;
 
