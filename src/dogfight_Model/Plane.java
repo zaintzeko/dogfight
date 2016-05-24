@@ -7,7 +7,7 @@ public class Plane extends Mobile {
 	private int player;
 
 	public Plane(final int player, final Direction direction, final Position position, final String image) {
-		super(direction, position, new Dimension(WIDTH, HEIGHT), SPEED, image);
+		super(direction, position, WIDTH, HEIGHT, SPEED, image);
 	}
 
 	@Override

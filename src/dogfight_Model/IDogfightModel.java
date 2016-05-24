@@ -16,7 +16,7 @@ public interface IDogfightModel {
 	}
 
 	public static IMobile getMobileByPlayer(final int player) {
-
+		return new Mobile(null, null, null, player, null);
 	}
 
 	public static ArrayList<IMobile> getMobiles() {
