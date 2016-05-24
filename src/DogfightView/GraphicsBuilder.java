@@ -1,5 +1,5 @@
 package DogfightView;
-import dogfight_Model
+import dogfight_Model;
 
 public class GraphicsBuilder {
 	private IDogfightModel iDogfightModel;
