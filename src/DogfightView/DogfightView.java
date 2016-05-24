@@ -1,9 +1,13 @@
 package DogfightView;
 
-import DogfightGameframe.GameFrame;
+import java.util.Observable;
 
-public class DogfightView {
-	private GraphicsBuilder graphicsBuilder;
+import DogfightController.IOrderPerformer;
+import DogfightGameframe.GameFrame;
+import dogfight_Model.IDogfightModel;
+
+public class DogfightView implements IViewSytem{
+	private IGraphicsBuilder graphicsBuilder;
 	private EventPerformer eventPerformer;
 	private GameFrame gameFrame;
 	

@@ -33,7 +33,7 @@ public class DogfightController implements IOrderPerformer, IVewSystem, IDogfigh
 
 	}
 
-	public void setViewSystem(final IVewSystem viewSystem) {
+	public void setViewSystem(final IViewSystem viewSystem) {
 
 	}
 
