@@ -1,14 +1,16 @@
 package dogfight_Model;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Observable;
 
 public class DogfightModel extends Observable implements IDogfightModel {
-	private ArrayList<Mobile> mobiles;
+	private final ArrayList<IMobile> mobiles;
 	private final Sky sky;
 
-	public DogfightModel() {
-		this.sky = new Sky();
+	public DogfightModel() throws IOException {
+		this.sky = new Sky(null);
+		this.mobiles = new ArrayList<IMobile>();
 	}
 
 	public void addMobiles(final IMobile mobile) {
@@ -19,16 +21,20 @@ public class DogfightModel extends Observable implements IDogfightModel {
 
 	}
 
-	public IArea getArea() {
-
+	public IArea getArea() throws IOException {
+		return new Sky(null);
 	}
 
-	public ArrayList<Mobile> getMobiles() {
+	public ArrayList<IMobile> getMobiles() {
 		return this.mobiles;
 	}
 
-	public IMobile getMobilesByPlayer(final int player) {
+	public IMobile getMobilesByPlayer(final int player) throws IOException {
+		return new Mobile(null, null, null, player, null);
+	}
 
+	public Sky getSky() {
+		return this.sky;
 	}
 
 	public void removeMobiles(final IMobile mobile) {

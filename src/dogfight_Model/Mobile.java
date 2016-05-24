@@ -2,29 +2,45 @@ package dogfight_Model;
 
 import java.awt.Color;
 import java.awt.Dimension;
+import java.awt.Image;
+import java.io.File;
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
 
 public class Mobile implements IMobile {
-	private final Color color;
 	private final Dimension dimension;
 	private Direction direction;
-	private final String image;
-	private final Postition position;
+	private final Image image;
+	private final Position position;
 
-	private final int speed;
+	private int speed;
 
-	public Mobile(final Direction direction, final Postition position, final Dimension dimension, final int speed,
-			final String image) {
+	public Mobile(final Direction direction, final Position position, final Dimension dimension, final int speed,
+			final String image) throws IOException {
 		this.speed = speed;
 		this.dimension = dimension;
-		this.image = image;
+
 		this.position = position;
 		this.speed = speed;
 		this.direction = direction;
-		// color = new Color();
+		this.image = ImageIO.read(new File("images/" + image));
+		// this.image = new Image();
+	}
+
+	public Mobile(final Direction direction, final Position position, final int width, final int height,
+			final int speed, final String image) throws IOException {
+		this.speed = speed;
+		this.dimension = new Dimension(width, height);
+
+		this.position = position;
+		this.speed = speed;
+		this.direction = direction;
+		this.image = ImageIO.read(new File("images/" + image));
 	}
 
 	public Color getColor() {
-
+		return new Color(1);
 	}
 
 	public Dimension getDimension() {
@@ -35,19 +51,19 @@ public class Mobile implements IMobile {
 		return this.direction;
 	}
 
-	public IDogfightModel getDogfightModel() {
-
+	public IDogfightModel getDogfightModel() throws IOException {
+		return new DogfightModel();
 	}
 
-	public void getHeight() {
-
+	public int getHeight() {
+		return 1;
 	}
 
-	public String getImage() {
+	public Image getImage() {
 		return this.image;
 	}
 
-	public Postition getPosition() {
+	public Position getPosition() {
 		return this.position;
 	}
 
@@ -55,20 +71,20 @@ public class Mobile implements IMobile {
 		return this.speed;
 	}
 
-	public void getWidth() {
-
+	public int getWidth() {
+		return 1;
 	}
 
 	public boolean hit() {
-
+		return false;
 	}
 
 	public boolean isPlayer(final int player) {
-
+		return true;
 	}
 
 	public boolean isWeapon() {
-
+		return true;
 	}
 
 	public void move() {

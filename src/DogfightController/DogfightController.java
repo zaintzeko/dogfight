@@ -1,11 +1,18 @@
 package DogfightController;
 
-import DogfightGameframe.IVewSystem;
+import DogfightView.IVewSystem;
+import dogfight_Model.IDogfightModel;
 
-public class DogfightController {
+public class DogfightController implements IOrderPerformer, IVewSystem, IDogfightModel {
 	int TIME_SLEEP = 30;
 
 	public DogfightController(final IDogfightModel dogfightModel) {
+
+	}
+
+	@Override
+	public void closeAll() {
+		// TODO Auto-generated method stub
 
 	}
 
@@ -17,6 +24,7 @@ public class DogfightController {
 
 	}
 
+	@Override
 	public void orderPerform(final UserOrder userOrder) {
 
 	}
