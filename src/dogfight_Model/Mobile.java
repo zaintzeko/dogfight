@@ -21,12 +21,24 @@ public class Mobile {
 		this.direction = direction;
 	}
 
+	public Color getColor() {
+
+	}
+
 	public Dimension getDimension() {
 		return this.dimension;
 	}
 
 	public Direction getDirection() {
 		return this.direction;
+	}
+
+	public IDogfightModel getDogfightModel() {
+
+	}
+
+	public void getHeight() {
+
 	}
 
 	public String getImage() {
@@ -42,6 +54,42 @@ public class Mobile {
 	}
 
 	public void getWidth() {
+
+	}
+
+	public boolean hit() {
+
+	}
+
+	public boolean isPlayer(final int player) {
+
+	}
+
+	public boolean isWeapon() {
+
+	}
+
+	public void move() {
+
+	}
+
+	public void moveDown() {
+
+	}
+
+	public void moveLeft() {
+
+	}
+
+	public void moveRight() {
+
+	}
+
+	public void moveUp() {
+
+	}
+
+	public void placeInarea(final IArea area) {
 
 	}
 
