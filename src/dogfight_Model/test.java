@@ -1,5 +1,5 @@
 package dogfight_Model;
 
-public class erfhtyuj {
+public class test {
 
 }
