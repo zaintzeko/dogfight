@@ -1,7 +1,11 @@
 package DogfightView;
 
-public class DoghtfightView {
+import DogfightGameframe.GameFrame;
 
+public class DoghtfightView {
+	private GraphicsBuilder graphicsBuilder;
+	private EventPerformer eventPerformer;
+	private GameFrame gameFrame;
 	
 	public void DogfightView(IOrderPerformer orderPerformer, IDogfightModel dogfightModel, Observable observable){
 		

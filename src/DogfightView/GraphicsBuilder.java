@@ -1,6 +1,10 @@
 package DogfightView;
+import dogfight_Model
 
 public class GraphicsBuilder {
+	private IDogfightModel iDogfightModel;
+	private BufferedImage bufferedImage;
+	
 	private int GobalWidth;
 	private int GlobalHeight;
 	
