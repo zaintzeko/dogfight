@@ -11,17 +11,17 @@ public class DogfightView implements IViewSystem {
 	private GameFrame gameFrame;
 	private IGraphicsBuilder graphicsBuilder;
 
+	public DogfightView(final IOrderPerformer orderPerformer, final IDogfightModel dogfightModel,
+			final Observable observable) {
+
+	}
+
 	@Override
 	public void closeAll() {
 
 	}
 
 	public void displayMessage(final String Message) {
-
-	}
-
-	public void DogfightView(final IOrderPerformer orderPerformer, final IDogfightModel dogfightModel,
-			final Observable observable) {
 
 	}
 
