@@ -1,12 +1,14 @@
 package dogfight_Model;
 
-public class Cloud {
+import java.io.IOException;
+
+public class Cloud extends Mobile {
 	private static int HEIGHT = 150;
+	private static String IMAGE = "cloud.jpg";
 	private static int SPEED = 1;
 	private static int WIDTH = 300;
-	String image = "cloud.jpg";
 
-	public Cloud(final Direction direction, final Dimension dimension) {
-
+	public Cloud(final Direction direction, final Position position) throws IOException {
+		super(direction, position, WIDTH, HEIGHT, SPEED, IMAGE);
 	}
 }

@@ -1,15 +1,17 @@
 package dogfight_Model;
 
-public class Missile {
+import java.io.IOException;
+
+public class Missile extends Mobile {
 	private static int HEIGHT = 10;
+	private static String IMAGE = "missile.jpg";
 	private static int MAX_DISTANCE_TRAVELED = 1400;
 	private static int SPEED = 4;
 	private static int WIDTH = 30;
 	int distanceTraveled = 0;
-	String image = "missile.jpg";
 
-	public Missile(final Direction direction, final Dimension dimension) {
-
+	public Missile(final Direction direction, final Position position) throws IOException {
+		super(direction, position, WIDTH, HEIGHT, SPEED, IMAGE);
 	}
 
 	public int getHeightWithADirection(final Direction direction) {
@@ -20,10 +22,12 @@ public class Missile {
 		return 1;
 	}
 
+	@Override
 	public boolean isWeapon() {
 		return true;
 	}
 
+	@Override
 	public void move() {
 
 	}
